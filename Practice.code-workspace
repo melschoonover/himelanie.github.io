@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Practice",
+			"path": "."
+		},
+		{
+			"name": "img",
+			"path": "../../Me/Final-Project-Milestone-Functional-Requir-MelanieSchoonov/img"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Practice"
+	}
+}
