@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">  
+    <!-- TODO: Replace this with your title -->
+    <title>Melanie's Portfolio</title>  
+    <!-- 
+			TODO: Add Bootstrap CSS link tag from: 
+    	https://getbootstrap.com/docs/5.1/getting-started/introduction 
+		-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- 
+			TODO: Add Bootstrap Icons link tag from: 
+			https://icons.getbootstrap.com/
+			(Remember, the CDN link is towards the bottom of the page!)
+		-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+
+    <!-- Custom styles (these can extend the default Bootstrap styles) -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+
+  <!-- TODO: Paste Navbar code and customize links -->  
+<nav class="navbar navbar-expand-md fixed-top navbar-light" style="background-color: #FFFFFF;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#Navbar"><i class="bi bi-circle"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-person-lines-fill"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#skills-section">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#inspiration-section">Inspiration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-section">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero section -->
+	<section id="hero-section">
+    <header class="hero">
+      <div class="hero-image">
+        <div id="hero-text">
+          <img class="avatar" src="img/profilePhoto.jpg">
+          <h3>Melanie Schoonover</h3>
+          <p>Computer Science Student with a Concentration in Software Engineering</p>
+        </div>
+      </div>
+    </header>
+	</section>
+
+  <!-- Skills section -->
+ <section id="skills-section">
+   <h3 class="text-center" style="color: #3b483e;">My Skills</h3>
+   <div class="container my-5">
+			<div class="row text-center g-4">
+				<div class="col-12 col-sm-6 col-lg-3">
+					<i class="bi bi-filetype-html" style="font-size:5rem; color: #3b483e;"></i>
+          <p>Structuring the web's content using  semantic HTML.</p>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-3">
+          <i class="bi bi-filetype-css" style="font-size:5rem; color: #3b483e;"></i>
+          <p>Presenting beautiful web designs and interactions using modern CSS.</p>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-3">
+					 <i class="bi bi-bootstrap" style="font-size:5rem; color: #3b483e;"></i>
+          <p>Rapidly developing responsive websites using the web's most popular framework.</p>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-3">
+					<i class="bi bi-filetype-js" style="font-size:5rem; color: #3b483e;"></i>
+          <p>Making interactive experiences, games, web apps, and more using javascript.</p>
+				</div>
+			</div>
+		</div>
+</section>
+    
+	<!-- Mission/Meet-me section <section id="mission-section">-->
+  <section id="mission-section">
+    <div id="mission">
+      <div class="container-fluid mt-2">
+        <h3>My Mission</h3>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <img class="img-fluid" id="mission-img" src="img/greatThings.jpg" alt="mission photo">
+          </div>
+            <p class="col-12 col-md-6 d-flex align-items-center" style="color: #f0ecc9;">I am a student at ASU, studying Computer Science with a concentraion in Software Engineering. Right now I am working on strengthening my skills as a "full stack" programmer. I strive to encourage and empower women in the field of STEM. I plan to leverage my skill set to create change and leave a lasting impact on the tech industry.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+	</section>
+  <!-- Inspiration Section -->
+  <section id="inspiration-section"> <!--This section has a carousel of the people in my life who inspire me, my sister, my allw women robotics team and my friends-->
+    <div class="container">
+      <h3 class="text-center" style="color: #3b483e;">My Inspiration</h3>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-interval="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/twin.jpg" class="d-block w-100" alt="Sister">
+            <div class="carousel-caption d-md-block">
+              <h5>My Sister</h5>
+              <p>"You are never alone, so don't choose to be"</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/roboteam.jpg" class="d-block w-100" alt="Team">
+            <div class="carousel-caption d-md-block">
+              <h5>My Robotics Team</h5>
+              <p>"We are women, and we are CAPABLE"</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/village.jpg" class="d-block w-100" style="object-position: top;" alt="Friends">
+            <div class="carousel-caption d-md-block">
+              <h5>My Friends</h5>
+              <p>"It takes a village, so let's be a village"</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div
+      </div>
+		
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact-section">
+    <h3 class="text-center" style="color: #f0ecc9;">Contact Me</h3>
+   <div class="container my-5">
+			<div class="row text-center g-4">
+				<div class="col-12 col-sm-6 col-lg-4"><!--Link to linkedin-->
+          <a href="https://www.linkedin.com/in/melanie-schoonover/" target="_blank">
+					<i class="bi bi-linkedin" style="font-size:5rem; color: #f0ecc9;"></i>
+          </a>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4"> <!--There is not an email attached. This is a placeholder for the future and a professional email.-->
+          <i class="bi bi-envelope" style="font-size:5rem; color: #f0ecc9;"></i>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4"><!--link to instagram-->
+          <a href="https://www.instagram.com/melschoonover/" target="_blank">
+					 <i class="bi bi-instagram" style="font-size:5rem; color: #f0ecc9;"></i>
+				</div>
+			</div>
+		</div>
+  </section>
+
+  <!-- Footer section -->
+  <section id="footer-section">
+    <footer class="bg-light text-center text-md-start">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);"> © 2022 Copyright: Melanie Schoonover</div>
+    </footer>
+  </section>
+
+  <!-- 
+		TODO: Paste Bootstrap Javascript script tag from:
+		https://getbootstrap.com/docs/5.1/getting-started/introduction/
+	-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	
+  </body>
+</html>
